@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="icon" type="image/x-icon" href="IMAGES/logo.png">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="https://kit.fontawesome.com/1e5c12ce8a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Capriola&family=Carme&family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body  >
+  
+    <div class="mycontainer "  style="overflow-x:hidden; ">
+        <div class="container-fluid">
+         <div class="row text-center">
+            
+            <div class="col-12">
+              <div  id="watico">
+                
+                <img src="watico.png" data-aos="zoom-in" data-aos-duration="8000" class="img-fluid" alt="">
+                <p class="display-5 " style="font-weight:800; font-family: 'Archivo', sans-serif;"> WATICO &nbsp&nbsp  LIBRARY</p>
+
+              </div>
+ 
+            </div>
+          </div>
+
+        </div>
+          <!--start of navigation bar-->
+          <nav onscroll="showwatico()" class="navbar navbar-expand-lg nav-tab justify-content sticky-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>  
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-4  my-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active parent" aria-current="page" href="#">HOME <span><i class="fa-sharp fa-solid fa-house-chimney"></i></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link parent" href="#" >ABOUT_US <span><i class="fa-solid fa-check-double"></i></span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle parent" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACADEMICS <span><i class="fa-solid fa-book-open-reader"></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle parent" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ADMISSION <span><i class="fa-solid fa-graduation-cap"></i></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li> 
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  parent" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      DEPARTMENT <span><i class="fa-solid fa-building-columns"></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle parent" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      FACILITIES <span><i class="fa-sharp fa-solid fa-building-user"></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                   <li  onclick="showwatico()" id="show"  class="nav-item">
+                    <a class="nav-link parent ">COLLAPSE <span><i class="fa-solid fa-circle-up"></i></span></a>
+                    
+                    
+                  </li>
+                
+
+
+                  
+                </ul>
+
+              </div>
+     
+            </div>
+          </nav>
+          <!--end of navigation bar-->
+          <!-- carousel start-->
+         
+            <div class="row">
+                  <div id="myCarousel" class="carousel slide  " data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                          <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        </ol>
+            
+                       <div class="carousel-inner">
+                          <div class="carousel-item  active" style="background-image: url(linkedin-sales-solutions-jJFrkJP_-RA-unsplash.jpg);">
+                            <!--carousel item-->
+                            <div class="container carousel-container" >
+                              <h1>Cobby ELson Ca</h1>
+                              <p>All modern browsers support the following 140 color names (click on a color name, or a hex value, to
+                                view the color as the background-color a
+                                long with different text colors):
+                              </p>
+                              <a href="" class="btn btn-sm btn-bg-transparent btn-outline-light">CLICK ON ME</a>
+                            </div>
+                        </div>
+                         <div class="carousel-item " style="background-image: url(IMAGES/white.jpg);">
+                            <!--carousel item-->
+                            <div class="container carousel-container">
+                              <h1>Cobby ELson Ca</h1>
+                              <p>
+                                People also ask
+                                What is data ride?
+                                The data-ride="carousel" attribute is
+                                to mark a carousel as animating starting at page load. It cannot be used in combination with
+                                (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
+                              </p>
+                              <a href="" class="btn btn-sm btn-bg-transparent btn-outline-light">CLICK ON ME</a>
+                            </div>
+                          </div>
+                          <!--next carousel-->
+                          <div class="carousel-item " style="background-image: url(IMAGES/real.jpg);">
+                            <!--carousel item-->
+                            <div class="container carousel-container">
+                              <h1>Cobby ELson Ca</h1>
+                              <p>
+                                People also ask
+                                What is data ride?
+                                The data-ride="carousel" attribute is
+                                to mark a carousel as animating starting at page load. It cannot be used in combination with
+                                (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
+                              </p>
+                              <a href="" class="btn btn-sm btn-bg-transparent btn-outline-light">CLICK ON ME</a>
+                            </div>
+                          </div>
+                          <!--end carousel-->
+                          <!--next carousel-->
+                            <div class="carousel-item " style="background-image: url(IMAGES/shelf.jpg);">
+                              <!--carousel item-->
+                                <div class="container carousel-container">
+                                  <h1>Cobby ELson Ca</h1>
+                                  <p>
+                                    People also ask
+                                    What is data ride?
+                                    The data-ride="carousel" attribute is
+                                    to mark a carousel as animating starting at page load. It cannot be used in combination with
+                                    (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
+                                  </p>
+                                  <a href="" class="btn btn-sm btn-bg-transparent btn-outline-light">CLICK ON ME</a>
+                                </div>
+                            </div>
+                          <!--end carousel-->
+                          <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+                            <span class="sr-only">
+                              <span class="carousel-control-prev-icon"> </span>
+                            </span>
+                          </button>
+            
+                          <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide ="next">
+                            <span class="sr-only">
+                              <span class="carousel-control-next-icon"></span>
+                            </span>
+                          </button>
+                        </div>
+                        <!--wrapper-->
+                  </div>
+          <!--gobal parent-->
+            <!--carousel end-->
+        </div>
+         <!--start first row-->
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-12" id="first_row">
+                <h1 class="display-2" id="headreq">REQUEST FOR ONLINE BOOKS</h1> 
+                <hr>
+                <button type="button"   class="btn   btn-lg btn-outline-primary" >
+                  <a  style="font-weight: bold; text-decoration: none; padding: 5px;" href="">LOGIN<i class="fa-solid fa-right-to-bracket"></i></a>  
+                 
+                </button>
+            </div> 
+          </div>
+        </div>
+        <!--end of first  row-->
+        <!--start second row-->
+         <div class="container-fluid" >
+          <div class="row  text-center middle-layer"   >
+            <div class="col-12">
+                <img src="images/6862081.jpg" class="img-fluid"  style="max-width: 85%; ; height: 200px;" alt="">
+            </div>
+          </div>
+         </div>
+        <!--end of second   row-->
+
+
+
+          <div class="container-fluid "> 
+            <div class="row text-center " id="cardbackground">
+              <div class="overlay"></div>
+              <!--start third row-->
+
+              <div class="col-xm-12 col-sm-6  col-md-6  col-lg-3">  <!--cards start-->
+                <div class="card shadow "       data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"  data-aos-duration="2000">
+                <center>
+                  <img src="watico.png"   style="max-width: 120px; height: 140px;" class=" card-img-top" alt="...">
+                </center>
+                  <div class="card-body bg- #0e002e">
+                    <h5 class="card-title">LEVEL 100</h5>
+                    <p class="card-text">e up the bulk of the card's content.</p>
+                    <a href="level200.html" class="btn ">Vist Slides</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xm-12 col-sm-6  col-md-6  col-lg-3">
+                
+                <div class="card shadow"  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"  data-aos-duration="2000">
+                <center>
+                  <img src="watico.png" style="max-width: 120px; height: 140px;" class="card-img-top" alt="...">
+                </center>
+                  <div class="card-body">
+                    <h5 class="card-title">LEVEL 200</h5>
+                    <p class="card-text">e up the bulk of the card's content.</p>
+                    <a href="level200.htm" class="btn  ">Visit Slides</a>
+                  </div>
+                </div>
+             
+
+              </div>
+              <div class="col-xm-12 col-sm-6  col-md-6  col-lg-3">
+                
+                <div class="card shadow"  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"  data-aos-duration="2000">
+                <center>
+                  <img src="watico.png"   style="max-width: 120px; height: 140px;"    class="card-img-top" alt="...">
+                </center>
+                  <div class="card-body">
+                    <h5 class="card-title">LEVEL 300</h5>
+                    <p class="card-text">e up the bulk of the card's content.</p>
+                    <a href="#" class="btn  ">Visit Slides</a>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col-xm-12 col-sm-6  col-md-6  col-lg-3  ">
+                
+                <div class="card shadow"  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"  data-aos-duration="2000">
+                <center> 
+                  <img src="watico.png"    style="max-width: 120px; height: 140px;"     class=" card-img-top" alt="...">
+                </center>
+                  <div class="card-body">
+                    <h5 class="card-title">LEVEL 400</h5>
+                    <p class="card-text">e up the bulk of the card's content.</p>
+                    <a href="level200.htm" class="btn  " >Visit Slides</a>
+                  </div>
+                </div><!--cards end-->
+            
+              </div><!--end of col-->
+            </div>    
+          </div> <!--container fluid-->
+          <!--end of sthird   row-->
+
+
+
+
+          <!-- FLIP OVER PICTURE SECTION -->
+
+         <section  id="flipoverpic">
+          
+          <div class="container-fluid ">
+            <div class="row">
+
+
+
+              <div class="col-12"   >
+
+                <div  id="middlePagePictures">
+
+                    <div id="wrapperofoverlay"> 
+                      <div class="overlay2 "  data-aos="fade-left">
+                        <hr>
+                        <center><i class="fa-light fa-square-check"></i></i>
+                          <h3>HEADER</h3>
+                        </center>
+                          <p >A good student is the one who can work in a group,
+                             motivate others and yield productive output. 
+                             Being positive, helpful, cooperative and friendly
+                              are all the traits of a good student. 
+                              Such students become great team players and leaders when they grow up.
+                            </p> 
+                          <hr> 
+                      </div>
+                    </div>
+                  <div id="imageholder"></div>
+                  
+
+                </div>
+                
+
+
+              </div><!--col-->
+
+
+            </div> <!--row-->
+
+          </div> <!--container fluid-->
+  
+              
+          <!--end of middlepagepictures-->
+
+
+
+
+          <div class="container-fluid ">
+            <div class="row">
+
+
+
+              <div class="col-12"   >
+
+                <div  id="middlePagePictures2">
+
+                    <div id="wrapperofoverlay"> 
+                      <div class="overlay3 "  data-aos="fade-right">
+                        <hr>
+                        <center><i class="fa-light fa-square-check"></i></i>
+                        <h3>HEADER</h3>
+                      </center>
+                        <p >A good student is the one who can work in a group,
+                           motivate others and yield productive output. 
+                           Being positive, helpful, cooperative and friendly
+                            are all the traits of a good student. 
+                            Such students become great team players and leaders when they grow up.
+                          </p> 
+                          <hr> 
+                      </div>
+                    </div>
+                  <div id="imageholder2"></div>
+                  
+
+                </div>
+                
+
+
+              </div><!--col-->
+
+
+            </div> <!--row-->
+
+          </div> <!--container fluid-->
+  
+              
+          <!--end of middlepagepictures-->
+
+        </section>  
+        <!-- end of flip over picture section -->
+
+              
+
+
+      
+
+
+        <footer>
+          <div class="container-fluid padding">
+            <div class="row text-center">
+              <div class="col-xm-12 col-sm-4">
+                <hr>
+                <h3><img src="images/logo.png " style="width: 30px;height: 40px; border-top-left-radius: 1rem; border-bottom-right-radius: 1rem;" alt=""> COBBY eLSONFX</h3>
+                <hr>
+                <p>
+                  Designed and built with all the love in the world by the Brightfield team with the help of our contributors.
+                 Currently v.0.1
+
+                </p>
+                 <div class="social_media">
+                  <a href="">Facebook<span><i class="fa-brands fa-facebook"></i></span></a>
+                  <a href="">&nbsp|&nbspInstagram<span><i class="fa-brands fa-instagram"></i></span></a>
+                  <a href="">&nbsp|&nbspGithub<span><i class="fa-brands fa-github"></i></span></a>
+                  <a href="">&nbsp|&nbspWhatsap<i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#">&nbsp|&nbspLinkedin<span><i class="fa-brands fa-linkedin"></i></span></a>
+                  <a href="">&nbsp|&nbspTwitter<span><i class="fa-brands fa-twitter"></i></span></a>
+                  <a href="">&nbsp|&nbspYoutube<span><i class="fa-brands fa-youtube"></i></span></a>
+                 </div>
+                 <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star  notchecked"></span>
+                  <span class="fa fa-star  notchecked"></span>
+                      </div>
+               
+              </div>
+              <div class="col-xm-12 col-sm-4">
+                <hr>
+                <h3>LINKS</h3>
+                <hr>
+                <ul>
+                  <li> <a href="#">Store</a> </li>
+                  <li><a href="#">Home</a> </li>
+                  <li> <a href="#">Examples</a></li>
+                  <li> <a href="#">Blog</a></li>
+                </ul>
+               
+              </div>
+              <div class="col-xm-12  col-sm-4"  >
+                <hr>
+                <h3>PROJECTS</h3>
+                <hr>
+                <ul>
+                  <li> <a href="#">Brightfield  Ltd.</a> </li>
+                  <li><a href="#">Home </a> </li>
+                  <li> <a href="#">Examples</a></li>
+                  <li> <a href="#">Blog</a></li>
+                </ul>
+               
+              </div>
+            </div>
+
+            <hr>
+             <div class="col-12 text-center  style="display:flex ;">
+              <p>COPYRIGHT <span><i class="fa-solid fa-copyright"></i></span> &nbsp&nbspTerms|Privacy</p>
+                
+             </div>
+           
+           
+    
+          </div> 
+    
+         
+        </footer>
+
+
+      </div> <!--mycontainer-->
+ 
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+  </body>
+</html> 
